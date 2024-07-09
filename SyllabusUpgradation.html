@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Startup - Startup Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+    <style>
+#myTable th{
+			border: 1px solid black;
+			border-collapse: collapse;
+			padding: 5px;
+		}
+#myTable tr{
+			border: 1px solid black;
+			border-collapse: collapse;
+			padding: 5px;
+		}
+        #myTable{
+            border: 2px solid black;
+
+        }
+        table, tbody {
+			border: 1px solid black;
+			border-collapse: collapse;
+			padding: 5px;
+		}
+.drop{
+      display: inline-block;
+      align-items: center;
+      justify-content: center;
+      left:8rem;
+      margin-right: 60px;
+      margin-left: 80px;
+      
+    }
+    .drop label{
+      font-size:15px;
+      color: rgb(50, 50, 207);
+    }
+    .drop select{
+    width:10rem;
+    height: 30px;
+    
+
+}
+#text{
+  
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  
+}
+select{
+    font-size:20px;
+    cursor: pointer;
+}
+#chartContainer:hover{
+  
+  box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.5);
+  transform: scale(1.05);
+}
+
+.line{
+    font-weight: bolder;
+    color: rgb(50, 50, 207);
+    border: 2px solid rgb(50, 50, 207)
+}
+
+    /* Existing CSS styles here */
+
+    /* Add border-collapse for table styling */
+    table {
+        border-collapse: collapse;
+        width: 50%;
+        justify-content: center;
+        margin-left: 30%;
+        
+    }
+
+    /* Add borders for table header cells */
+    th {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+    }
+
+    /* Add borders for table data cells */
+    td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+  
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0" style="background-color:#091E3E">
+            <a href="index.html" class="navbar-brand p-0">
+                <h1 class="m-0"><i class="fa fa-user-tie me-2"></i>SkillsUpNow</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <!-- <a href="about.html" class="nav-item nav-link">About</a> -->
+                    <a href="JobTrendAnalysis.html" class="nav-item nav-link">Job Trend Analysis</a>
+                   
+                    <!-- <a href="AdmissionTrendAnalysis.html" class="nav-item nav-link">Trending Technology</a> -->
+                    <a href="AdmissionTrendAnalysis.html" class="nav-item nav-link">Admission Trend Analysis</a>
+                    <a href="SyllabusUpgradation.html" class="nav-item nav-link active">Syllabus Upgradation</a>
+                    <a href="index.html#trend" class="nav-item nav-link">Trending Courses</a>
+                    <a href="index.html#exp" class="nav-item nav-link">Expert Talk</a>
+                
+        </nav>
+
+        
+
+
+
+    <!-- hhhhhhh -->
+
+    <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img class="w-100"  src="background-1.jpg" alt="Image">
+              <div class="carousel-caption d-flex flex-column align-items-center justify-content-center" style="opacity: 0.6;">
+                  <div class="p-3" style="max-width: 900px;">
+                      <!-- <h5 class="text-white text-uppercase mb-3 animated slideInDown">Creative & Innovative Digital Solution</h5> -->
+                      <h1 class="display-1 text-white mb-md-4 animated zoomIn" style="font-size:90px;">Techbyte-360</h1>
+                      <h4 class="text-white text-uppercase mb-3 animated slideInDown">Creative & Innovative Digital Solution</h4>
+                     
+                  </div>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <img class="w-100" src="background-1.jpg" alt="Image">
+              <div class="carousel-caption d-flex flex-column align-items-center justify-content-center" style="opacity: 0.6;">
+                  <div class="p-3" style="max-width: 900px;">
+                      <h2 class="text-white text-uppercase mb-3 animated slideInDown">Creative & Innovative Digital Solution </h2>
+                      <h1 class="display-1 text-white mb-md-4 animated zoomIn">Techbyte-360</h1>
+                   
+                  </div>
+              </div>
+          </div>
+      </div>
+    <!-- Navbar End -->
+
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+     <br>
+     <br>
+     <br>
+     <br>
+<!-- graph by aas -->
+
+<p id="txt" style="text-align: center;font-size:40px;font-weight: bold;color:rgb(50, 50, 207)">Trending skills for inclusion in upcoming Syllabus Upgradation</p>
+<p class="mb-4" style="text-align: center;margin-right:100px;margin-left:100px;">This data helps update the syllabus by introducing the latest technologies and concepts, making sure students learn relevant skills for current job demands and stay up-to-date with advancements in their field.</p>
+
+<div class="drop">
+    <label for="course">SELECT COURSE:</label>
+    <select id="dropdown">
+        <option value="Data Science">Data Science</option>
+        <option value="Cyber Security">Cyber Security</option>
+        <option value="Web Development">Web Development</option>
+        <option value="IoT">IoT</option>
+        <option value="Pharmacy">Pharmacy</option>
+        <option value="Management">Management</option>
+    </select>
+</div>
+
+<button class="btn btn-primary py-2 px-4 mt-4" onclick="updateTable()">Update Table</button>
+<br><br>
+
+<br><br>
+<table id="myTable">
+    <thead>
+        <tr>
+            <th>Technologies</th>
+            <th>Around 2011</th>
+            <th>Around 2023</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Table rows will be added dynamically here -->
+    </tbody>
+</table>
+<script>
+    function updateTable() {
+        var dropdown = document.getElementById("dropdown");
+        var table = document.getElementById("myTable");
+        var tbody = table.getElementsByTagName("tbody")[0];
+        tbody.innerHTML = ""; // Clear existing table rows
+
+        var selected = dropdown.value;
+        var data = [];
+
+      
+        if(selected==="Data Science"){
+            data=[["Programming Languages","Python and R","Python dominates,R remain relevant"],
+                ["Data Manipulation","SQL and basic data manipulation tools","Advanced data manipulation libraries like Pandas"],
+                ["Machine Learning","Traditional Algorithms(e.g., decision trees,linear regression)","Deep learning,neural networks,and AutoML platforms"],
+                ["Data Visualization","Basic libraries(e.g., matplotlib)","Advanced visualization libraries(e.g.,seaborn,plotly)"],
+                ["Big Data Technologies","Not as prevalent","Apache Handoop,Spark,distributed databases"],
+                ["Natural Language Processing","N/A","Significant advancement in NLP and text analytics"],
+                ["Cloud-based Solutions","N/A","Cloud platforms for Scalable data processing"],
+                ["Edge Computing","N/A","Applications of Edge computing in Data Science"],
+                ["AutoML","N/A","Automated Machine Learning platforms"],
+                ["Explainable AI","N/A","Focus on interpretable and"],
+            ];
+        }
+        else if(selected==="Web Development"){
+            data=[["HTML and CSS","Foundation of web pages","HTML5 and CSS3 with multimedia support and animations"],
+                  ["JavaScript","Adding interactivity to websites","DOM manipulation,front-end frameworks(React,Angular,Vue.js)"],
+                  ["jQuery","Popular JS Library","DOM manipulation,Still used, but front-end frameworks have gained more prominance"],
+                  ["Flash","Used for interface elements and multimedia","Deprecated in favor of HtML5 and JS"],
+                  ["PHP and MySQL","Server-side scripting and database management","Widespread use of Node.js,NoSQL database(MongoDB,Firebase)"],
+                  ["Responsive Design","Early stages of adoption","Standard practice for cross-device compatibility"],
+                  ["WebAssembly(Wasm)","N/A","Used for high-performance execution of code in browsers"],
+                  ["Progressive Web Apps(PWAs)","N/A","Gained traction for app-like experiences on the web"],
+                  ["Web Accessibility","N/A","Increased emphasis on inclusive web design and development"],
+                  ["CSS Grid and Flexbox","N/A","Widely used for complex and responsive page layouts"]
+                //   ["Web Security","Basic Security measures","HTTpS,CSP, and other security standards are now standard"],
+            ];
+        }
+        else if(selected==="Cyber Security"){
+            data=[["Antivirus Software","Widely used for detecting and removing malware","Evolved to include advanced heuristics and behaviour-based detection"],
+            ["Firewalls","Commonly used for network security","Next-generation firewalls with deep packet inspection"],
+            ["Intrusion Detection System","Basic IDS solutions for network monitoring","Advanced IDS/IPS with machine learning and anomaly detection"],
+            ["Encryption","Encryption for data protection and communication","Enhanced encryption algorithms and hardware security modules"],
+            ["Two-Factor Authentication","Some Adoption for critical systems","Widespread use for added account security"],
+            ["Security Information and Event Management(SIEM)","Limited use for log management and analysis","Centralized SIEM solutions with real-time threat detection"],
+            ["Penetration Testing","Conducted but not as prevalent today","Regularly performed to identify vulnerabilities and weaknesses"],
+            ["Cloud Security","In its early stages with limited solutions","Advanced cloud security measures and services"],
+            ["Mobile Device Security","Basic security features and limited threats","Extensive mobile security solutions and mobile device management"],
+            ["Incident Response","Reactive approaches to security incidents","Proactive and well-defined incident response plans and teams"],
+            ];
+        }
+        else if(selected==="IoT"){
+            data=[["IoT Protocols","Basic protocols like MQTT,CoAP,and HTTP","Expanded set of protocols for various use cases,including MQTT,CoAP, and AMQP"],
+            ["Connectivity","Limited Connectivity Options(2G,3G)","Widespread use of LPWAN(LoRaWAN,NB-IOT),4G, and the emergence of 5G"],
+            ["Edge Computing","Not widely Implemented","Edge computing for real-time data processing and reducing latency"],
+            ["IoT Platforms","Few IoT platforms available","Abundance of IoT platforms offering cloud-based services and device management"],
+            ["Security","Security concerns,limited focus on IoT security","Heightened focus on IoT security with secure boot,encryption,and device keys"],
+            ["IoT Analytics","Basic data collection and storage","Advanced data analytics with machine learning for actionable insights"],
+            ["Device Management","Basic device management functionalities","Robust device management platforms with over-the-air updates and monitoring"],
+            ["Integration with Cloud","Limited integration with cloud services","Deep integration with cloud platforms like AWS IoT, and Goggle IoT"],
+            ["Industrial IoT(IIoT)","Early stages of IIoT adoption in specific industries","Widespread adoption of IIoT for industrial automation and predictive maintenance"],
+            ["IoT standards","Developing standards and protocols","Matured standards and industry alliances promoting interoperability"],
+            ["IoT Use Cases","Basic smart home devices and wearables","Diverse IoT use cases,including smart cities, healthcare ,agriculture,and more"],
+            
+            ];
+        }
+        else if(selected==="Robotics"){
+            data=[["Robot Types","Basic protocols like MQTT,CoAP,and HTTP","Expanded set of protocols for various use cases,including MQTT,CoAP, and AMQP"],
+                ["Mobility","Limited Mobility,mainly stationary or wheeled robots","Advancements in mobility,including legged,wheeled, and flying robots"]
+                ["Sensing","Basic sensors for navigation and basic interaction","Advanced sensors,including LiDAR,depth cameras,and tactile sensors"]
+                ["Processing Power","Limited computing capabilities for most robots","Increased processing power of AI and advanced onboard computing"]
+                ["AI and Machine Learning","Limited integration of AI and ML in robotic systems","Extensive use ofAI and ML for perception,decision-making,and learning"]
+                ["Human-Robot Interaction","Basic user interfaces and limited natural language","Improved human-robot interfaces,voice recognition, and natural language"]
+                ["Robot OS","ROS was available,but not as widely adopted","Widespread use of ROS in robot development and research"]
+                ["Autonomy","Limited autonomy,mostly,teleoperated or scripted tasks","Improved autonomy with adaptive learning capabilities"]
+                ["Collaborative Robots","Cobots were in their early stages of adoption","Widespread adoption of collaborative robots in various industries"]
+                ["Soft Robots","N/A","Emergence of soft robotics for flexible and delicate tasks"],
+            
+            ];
+        }
+        else if(selected==="Pharmacy"){
+            data=[["Prescription Management","Manual prescription filling and record-keeping,CoAP,and HTTP","Electronic Health Records(EHRs) and e-prescribing systems for efficiency"],
+                ["Medication Dispensing","Traditional pharmacy counters with manual","Advancements in mobility,including legged,wheeled, and flying robots"],
+                ["Drug Interactions and Safety","Basic drug interaction checks","Advanced drug interaction databases and AI-based safety checks"],
+                ["Pharmacy Information Systems","Limited use of pharmacy information systems","Comprehensive pharmacy management software with inventory and biling features"],
+                ["Patient Engagement","Limited patient education and counseling","Increased focus on patient engagement through digital platforms and apps"],
+                ["Telepharmacy","Not as prevalent","Growing adoption of telepharmacy services for remote consultations"],
+                ["Drug Delivery","Traditional methods(oral,injectable)","Advancements in drug delivery methods, including nanotechnology and patches"],
+                ["Medication Adherence","Limited tools for monitoring and adherence tracking","Mobile apps and smart devices for medication reminders and adherence monitoring"],
+                ["Pharmacogenomics","N/A","Emergence of Pharmacogenomic testing for personalized medication prescriptions"],
+                ["Data Analytics","Limited Data analytics for pharmacy operations","Utilization of big data and analytics for population health and deug trends"],
+                ["Medication Therapy management","Basic MTM services for chronic disease management","Expanded Medication Therapy Management programs for better patient care"],
+                
+                ["","",""]
+            
+            ];
+        }
+        else if(selected==="Management"){
+            data=[["Project Management Software","Basic Project Management tools like MS Project","Advanced cloud-based project management platforms"],
+                ["Communication Tools","Email,phone calls,and traditional messaging services","Collaboration platforms"],
+                ["Data Analysis Tools","Basic spreadsheets and limited analytics capabilities","Advanced data Analytics and business intelligence tools"],
+                ["Performance Management","Manual performance evaluation and feedback processes","Digital performance management platforms with continuous feedback"],
+                ["Human Resources System","On-premise HR software for pyroll and personnel","Cloud-based HRIS with self-service features and analytics capabilities"],
+                ["Customer Relationship Management","Basic CRM systems","CRM platforms with integrated marketing and customer analytics"],
+                ["Business Intelligence","Limited BI tools for reporting and analysis","Advanced BI solutions with real-time dashboards and predictive analysis"],
+                ["Supply Chain Management","Manual supply chain processes and tracking","Digitized supply chain with IoT,blockchain,and AI for optimization"],
+                ["ERP","Traditional ERP systems","Modern cloud-based ERP with seamless integration and scalability"],
+                ["Remote Management","Limited remote work options","Wide adoption of remote management tools and virtual team collaboration"],
+                
+            
+            ];
+        }
+
+        // Insert data into the table
+        for (var i = 0; i < data.length; i++) {
+            var row = tbody.insertRow(i);
+            for (var j = 0; j < data[i].length; j++) {
+                var cell = row.insertCell(j);
+                cell.innerHTML = data[i][j];
+            }
+        }
+    }
+    updateTable();
+</script>
+<br>
+<br>
+
+
+      <!-- Footer Start -->
+      <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s" style="height:100px;">
+        <div class="container">
+            <div class="row gx-5">
+                
+                        <div class="col-lg-4 col-md-12 pt-5 mb-5" style="display:flex;">
+                            <!-- <div class="section-title section-title-sm position-relative pb-3 mb-4" style="display:flex;"> -->
+                                <h3 class="text-light mb-0" style="white-space:nowrap;">Get In Touch <p style="font-size: medium;">nainankita08@gmail.com</p></h3>
+                               
+                            <div class="d-flex mt-4">
+                                <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                                <!-- <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a> -->
+                                <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                                <!-- <a class="btn btn-primary btn-square" href="#"><i class="fab fa-instagram fw-normal"></i></a> -->
+                            </div>
+                        
+                        </div>
+        
+                        
+    
+                    
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-white" style="background: #061429;">
+        <div class="container text-center">
+            <div class="row justify-content-end">
+                <div class="col-lg-8 col-md-6">
+                    <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
+                        <p class="mb-0">&copy; <a class="text-white border-bottom" href="#">SkillsUpNow</a>. All Rights Reserved. 
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+  
+     
+      <!-- Footer End -->
+  
+  
+      <!-- Back to Top -->
+      <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+  
+  
+      <!-- JavaScript Libraries -->
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="lib/wow/wow.min.js"></script>
+      <script src="lib/easing/easing.min.js"></script>
+      <script src="lib/waypoints/waypoints.min.js"></script>
+      <script src="lib/counterup/counterup.min.js"></script>
+      <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  
+      <!-- Template Javascript -->
+      <script src="js/main.js"></script>
+  </body>
+  
+  </html>

@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Startup - Startup Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+    <style>
+
+.drop{
+      display: inline-block;
+      align-items: center;
+      justify-content: center;
+      left:8rem;
+      margin-right: 60px;
+      margin-left: 80px;
+      
+    }
+    .drop label{
+      font-size:15px;
+      color: rgb(50, 50, 207);
+    }
+    .drop select{
+    width:10rem;
+    height: 30px;
+    
+
+}
+#text{
+  
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  
+}
+.text{
+  
+  font-size: 40px;
+  color: rgb(50, 50, 207);
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  
+}
+select{
+    font-size:20px;
+    cursor: pointer;
+}
+#chartContainer:hover{
+  
+  box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.5);
+  transform: scale(1.05);
+}
+
+.line{
+    font-weight: bolder;
+    color: rgb(50, 50, 207);
+    border: 2px solid rgb(50, 50, 207)
+}
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0" style="background-color:#091E3E">
+            <a href="index.html" class="navbar-brand p-0">
+                <h1 class="m-0"><i class="fa fa-user-tie me-2"></i>SkillsUpNow</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <!-- <a href="about.html" class="nav-item nav-link">About</a> -->
+                    <a href="JobTrendAnalysis.html" class="nav-item nav-link active">Job Trend Analysis</a>
+                   
+                    <a href="AdmissionTrendAnalysis.html" class="nav-item nav-link">Admission Trend Analysis</a>
+                    <a href="SyllabusUpgradation.html" class="nav-item nav-link">Syllabus Upgradation</a>
+                    <a href="index.html#trend" class="nav-item nav-link">Trending Courses</a>
+                    <a href="index.html#exp" class="nav-item nav-link">Expert Talk</a>
+                
+            <!-- </div> -->
+        </nav>
+
+        
+
+
+
+    <!-- hhhhhhh -->
+
+    <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img class="w-100"  src="background-1.jpg" alt="Image">
+              <div class="carousel-caption d-flex flex-column align-items-center justify-content-center" style="opacity: 0.6;">
+                  <div class="p-3" style="max-width: 900px;">
+                      <!-- <h5 class="text-white text-uppercase mb-3 animated slideInDown">Creative & Innovative Digital Solution</h5> -->
+                      <h1 class="display-1 text-white mb-md-4 animated zoomIn" style="font-size:90px;">Techbyte-360</h1>
+                      <h4 class="text-white text-uppercase mb-3 animated slideInDown">Creative & Innovative Digital Solution</h4>
+                      
+                  </div>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <img class="w-100" src="background-1.jpg" alt="Image">
+              <div class="carousel-caption d-flex flex-column align-items-center justify-content-center" style="opacity: 0.6;">
+                  <div class="p-3" style="max-width: 900px;">
+                      <h2 class="text-white text-uppercase mb-3 animated slideInDown">Creative & Innovative Digital Solution </h2>
+                      <h1 class="display-1 text-white mb-md-4 animated zoomIn">Techbyte-360</h1>
+                     
+                  </div>
+              </div>
+          </div>
+      </div>
+    <!-- Navbar End -->
+
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+     <br>
+     <br>
+     <br>
+     <br>
+
+    <!-- Graph by Aastha -->
+    <center>
+      <p class="text">New Registered StartUps launched per Year</p></center>
+      <p class="mb-4" style="text-align: center;margin-right:100px;margin-left:100px;">The graph depicting the number of new startup companies year-wise and state-wise helps in job trend analysis by showing how entrepreneurship and business growth vary across time and different regions, indicating potential shifts in job opportunities and economic development.</p>
+
+    <div class="drop">
+        <label for="course">SELECT INDUSTRY:</label>
+          <select id="chartDropdown1">
+            <option value="Agriculture">Agriculture</option>
+            <option value="Business Services">Business Services</option>
+            <option value="Construction">Construction</option>
+            <option value="Electricity,gas & water companies">Electricity,Gas & water companies</option>
+            <option value="Finance">Finance</option>
+            <option value="Healthcare">Healthcare</option>
+            <option value="Insurance">Insurance</option>
+            <option value="Manufacture">Manufacture</option>
+            <option value="Media & Communications">Media & Communications</option>
+            <option value="Mining & Quarrying">Mining & Quarrying</option>
+            <option value="Pharmaceutical">Pharmaceutical</option>
+            <option value="Real estate & renting">Real estate & renting</option>
+            <option value="Software">Software</option>
+            <option value="Trading">Trading</option>
+            <option value="Transport,storage & Communications">Transport,storage & Communications</option>
+            
+          </select>
+        </div>
+        <div class="drop">
+          <label for="course">SELECT STATE:</label>
+          <select id="chartDropdown2">
+            <option value="Haryana">Haryana</option>
+            <option value="Delhi">Delhi</option>
+            <!-- <option value="Gujarat">Gujarat</option>
+            <option value="Punjab">Punjab</option> -->
+          </select>
+        </div>
+        
+          <div id="chartContainer" style="margin:50px;margin-top: 50px;color:rgb(50,50,207)">
+            <canvas id="myChart" style="height:400px; width:1000px;color:rgb(50,50,207)"></canvas>
+          </div>
+          
+          
+          <!-- <p class="mb-4" style="text-align: center;font-weight: bold;margin-right:100px;margin-left:100px;">The graph depicting the number of new startup companies year-wise and state-wise helps in job trend analysis by showing how entrepreneurship and business growth vary across time and different regions, indicating potential shifts in job opportunities and economic development.</p> -->
+          <hr class="line">
+          <p class="text">Country-wise Industrial Growth</p></center>
+          <p class="mb-4" style="text-align: center;margin-right:100px;margin-left:100px;">The graph showing how industries in different countries have grown each year helps us understand job trends. By looking at it, we can see which industries are getting bigger or smaller, which helps us know where job opportunities might be increasing or decreasing.</p>
+
+          <div class="drop">
+            <label for="course">SELECT INDUSTRY:</label>
+              <select id="chartDropdown3">
+                <option value="Mining and quarrying">Mining and quarrying</option>
+                    <option value="Manufacturing">Manufacturing</option>
+                    <option value="Information and communication">Information and communication</option>
+                    <option value="Financial and insurance activities">Financial and insurance activities</option>
+                    <option value="Professional scientific and technical activities">Professional scientific and technical activities</option>
+                    <option value="Arts, entertainment and recreation">Arts, entertainment and recreation</option>
+              </select>
+            </div>
+            <div class="drop">
+              <label for="course">SELECT COUNTRY:</label>
+              <select id="chartDropdown4">
+                <option value="India">India</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="United States">United States</option>
+                <option value="Japan">Japan</option>
+                <option value="China">China</option>
+              </select>
+            </div>
+            
+              <div id="chartContainer" style="margin:50px;margin-top: 50px">
+                <canvas id="myChart1" style="height:300px; width:1000px"></canvas>
+              </div>
+        
+          <script>
+            function myfunction(){
+              console.log(print());
+            }
+            var chartDropdown1 = document.getElementById('chartDropdown1');
+            var chartData = {
+              labels: ['2016','2017','2018','2019','2020','2021','2022','2023','2024'],
+              datasets: [
+                {
+                  label: 'New Registred Companies',
+                  backgroundColor: 'rgb(50,50, 207)',
+                  borderColor: 'rgb(50, 50, 207)',
+                  borderWidth: 1,
+                  data: [67, 78, 83, 322,375,310,468,523,593]
+                }
+              ]
+            };
+           
+         
+        
+            var ctx = document.getElementById('myChart').getContext('2d');
+            var myChart = new Chart(ctx, {
+  type: 'line',
+  data: chartData,
+  options: {
+    responsive: true,
+    legend: {
+      position: 'top',
+    },
+    title: {
+      display: true,
+      text: 'Chart Title',
+      font: {
+        size: 26, // Adjust the font size for the chart title
+        weight: 'bold', // Make the chart title bold
+      },
+      color: 'black', // You can also change the font color if needed
+    },
+    scales: {
+      x: {
+        display: true,
+        title: {
+          display: true,
+          text: '',
+          font: {
+            size: 20, // Adjust the font size for the X-axis label
+            weight: 'bold', // Make the X-axis label bold
+          },
+          color: 'black', // You can also change the font color if needed
+        },
+        ticks: {
+          font: {
+            size: 12, // Adjust the font size for the X-axis ticks
+            weight: 'normal', // Use 'normal' for regular font weight
+          },
+          color: 'black', // You can also change the tick font color if needed
+        },
+      },
+      y: {
+        display: true,
+        title: {
+          display: true,
+          text: 'No.of New Registered StartUps',
+          font: {
+            size: 15, // Adjust the font size for the Y-axis label
+            weight: 'bold', // Make the Y-axis label bold
+          },
+          color: 'black', // You can also change the font color if needed
+        },
+        ticks: {
+          beginAtZero: true,
+          font: {
+            size: 12, // Adjust the font size for the Y-axis ticks
+            weight: 'normal', // Use 'normal' for regular font weight
+          },
+          color: 'black', // You can also change the tick font color if needed
+        },
+      },
+    },
+  },
+});
+            chartDropdown1.addEventListener('change', function() {
+              var selectedValue1 = this.value;
+              var chartDropdown2 = document.getElementById('chartDropdown2');
+              chartDropdown2.addEventListener('change', function() {
+                var selectedValue2 = this.value;
+                var selectedValue = selectedValue1 + "-" + selectedValue2;
+                updateChart(selectedValue);
+              });
+              var selectedValue = selectedValue1 + "-" + chartDropdown2.value;
+              updateChart(selectedValue);
+            });
+
+        
+            function updateChart(selectedValue) {
+            if (selectedValue === 'Agriculture-Haryana') {
+                chartData.datasets[0].data = [67, 78, 83, 322,375,310,468,523,593];
+                chartData.title = 'Agriculture-Haryana';
+              } else if (selectedValue === 'Business Services-Haryana') {
+                chartData.datasets[0].data = [1871, 2240, 852, 1953,2089,1880,1693,1794,1793];
+                chartData.title = 'Business Services-Haryana';
+              } else if (selectedValue === 'Construction-Haryana') {
+                chartData.datasets[0].data = [93, 137, 85, 285,308,349,319,414,461];
+                chartData.title = 'Construction-Haryana';
+              } else if (selectedValue === 'Electricity,gas & water companies-Haryana') {
+                chartData.datasets[0].data = [55, 42, 22, 73,81,53,59,68,71];
+                chartData.title = 'Electricity,gas & water companies-Haryana';
+              } else if (selectedValue === 'Finance-Haryana') {
+                chartData.datasets[0].data = [28, 66, 37, 162,144,133,160,195,218];
+                chartData.title = 'Finance-Haryana';
+              } else if (selectedValue === 'Healthcare-Haryana') {
+                chartData.datasets[0].data = [101, 78, 62, 140,175,181,161,199,217];
+                chartData.title = 'Healthcare-Haryana';
+              } else if (selectedValue === 'Insurance-Haryana') {
+                chartData.datasets[0].data = [7, 2, 1, 6,11,11,22,19,21];
+                chartData.title = 'Insurance-Haryana';
+              } else if (selectedValue === 'Manufacture-Haryana') {
+                chartData.datasets[0].data = [463, 521, 358, 1004,1378,1335,1517,1769,1976];
+                chartData.title = 'Manufacture-Haryana';
+              } else if (selectedValue === 'Media & Communications-Haryana') {
+                chartData.datasets[0].data = [185, 386, 293, 824,840,767,826,1050,1165];
+                chartData.title = 'Media & Communications-Haryana';
+              } else if (selectedValue === 'Mining & Quarrying-Haryana') {
+                chartData.datasets[0].data = [16, 18, 5, 25,49,26,28,37,41];
+                chartData.title = 'Mining & Quarrying-Haryana';
+              } else if (selectedValue === 'Pharmaceuticall-Haryana') {
+                chartData.datasets[0].data = [37, 40, 20, 72,99,94,132,138,154];
+                chartData.title = 'Pharmaceuticall-Haryana';
+              } else if (selectedValue === 'Real estate & renting-Haryana') {
+                chartData.datasets[0].data = [130, 129, 57, 187,206,266,206,261,284];
+                chartData.title = 'Real estate & renting-Haryana';
+              } else if (selectedValue === 'Software-Haryana') {
+                chartData.datasets[0].data = [105, 148, 71, 166,115,146,169,164,172];
+                chartData.title = 'Software-Haryana';
+              } else if (selectedValue === 'Trading-Haryana') {
+                chartData.datasets[0].data = [334, 362, 232, 802,906,844,916,1111,1232];
+                chartData.title = 'Trading-Haryana';
+              } else if (selectedValue === 'Transport,storage & Communications-Haryana') {
+                chartData.datasets[0].data = [124, 130, 62, 257,254,242,210,278,303];
+                chartData.title = 'Transport,storage & Communications-Haryana';
+              }
+               else if (selectedValue === 'Agriculture-Delhi') {
+                chartData.datasets[0].data = [136,138,94,255,231,184,165,216,228];
+                chartData.title = 'Agriculture-Delhi';
+              } else if (selectedValue === 'Business Services-Delhi') {
+                chartData.datasets[0].data = [7755,8170,2559,4890,4686,3863,3432,2271,1576];
+                chartData.title = 'Business Services-Delhi';
+              } else if (selectedValue === 'Construction-Delhi') {
+                chartData.datasets[0].data = [426,503,243,690,545,597,646,685,726];
+                chartData.title = 'Construction-Delhi';
+              } else if (selectedValue === 'Electricity,gas & water companies-Delhi') {
+                chartData.datasets[0].data = [150,130,70,184,225,148,199,206,218];
+                chartData.title = 'Electricity,gas & water companies-Delhi';
+              } else if (selectedValue === 'Finance-Delhi') {
+                chartData.datasets[0].data = [169,189,93,431,371,367,441,501,553];
+                chartData.title = 'Finance-Delhi';
+              } else if (selectedValue === 'Healthcare-Delhi') {
+                chartData.datasets[0].data = [286,247,196,254,386,359,317,364,382];
+                chartData.title = 'Healthcare-Delhi';
+              } else if (selectedValue === 'Insurance-Delhi') {
+                chartData.datasets[0].data = [18,18,7,28,25,25,29,30,33];
+                chartData.title = 'Insurance-Delhi';
+              } else if (selectedValue === 'Manufacture-Delhi') {
+                chartData.datasets[0].data = [1373,1453,819,2456,2887,2679,1136,2373,2509];
+                chartData.title = 'Manufacture-Delhi';
+              } else if (selectedValue === 'Media & Communications-Delhi') {
+                chartData.datasets[0].data = [684,1392,868,2125,2160,1929,1764,2361,2561];
+                chartData.title = 'Media & Communications-Delhi';
+              } else if (selectedValue === 'Mining & Quarrying-Delhi') {
+                chartData.datasets[0].data = [16, 18, 5, 25,49,26,28,37,41];
+                chartData.title = 'Mining & Quarrying-Delhi';
+              } else if (selectedValue === 'Pharmaceuticall-Delhi') {
+                chartData.datasets[0].data = [135,143,76,190,209,183,273,276,284];
+                chartData.title = 'Pharmaceuticall-Delhi';
+              } else if (selectedValue === 'Real estate & renting-Delhi') {
+                chartData.datasets[0].data = [130, 129, 57, 187,206,266,280,304,335];
+                chartData.title = 'Real estate & renting-Delhi';
+              } else if (selectedValue === 'Software-Delhi') {
+                chartData.datasets[0].data = [427,416,191,382,299,299,343,282,269];
+                chartData.title = 'Software-Delhi';
+              } else if (selectedValue === 'Trading-Delhi') {
+                chartData.datasets[0].data = [334, 362, 232, 802,906,844,916,1111,1232];
+                chartData.title = 'Trading-Delhi';
+              } else if (selectedValue === 'Transport,storage & Communications-Delhi') {
+                chartData.datasets[0].data = [124, 130, 62, 257,254,242,310,336,370];
+                chartData.title = 'Transport,storage & Communications-Delhi';
+              }
+              else if (selectedValue === 'Agriculture-Gujarat') {
+                chartData.datasets[0].data = [136,138,94,255,231,184,165,216,228];
+                chartData.title = 'Agriculture-Gujarat';
+              } else if (selectedValue === 'Business Services-Gujarat') {
+                chartData.datasets[0].data = [7755,8170,2559,4890,4686,3863,3432,2271,1576];
+                chartData.title = 'Business Services-Gujarat';
+              } else if (selectedValue === 'Construction-Gujarat') {
+                chartData.datasets[0].data = [426,503,243,690,545,597,646,685,726];
+                chartData.title = 'Construction-Gujarat';
+              } else if (selectedValue === 'Electricity,gas & water companies-Gujarat') {
+                chartData.datasets[0].data = [150,130,70,184,225,148,199,206,218];
+                chartData.title = 'Electricity,gas & water companies-Gujarat';
+              } else if (selectedValue === 'Finance-Gujarat') {
+                chartData.datasets[0].data = [169,189,93,431,371,367,441,501,553];
+                chartData.title = 'Finance-Gujarat';
+              } else if (selectedValue === 'Healthcare-Gujarat') {
+                chartData.datasets[0].data = [286,247,196,254,386,359,317,364,382];
+                chartData.title = 'Healthcare-Gujarat';
+              } else if (selectedValue === 'Insurance-Gujarat') {
+                chartData.datasets[0].data = [18,18,7,28,25,25,29,30,33];
+                chartData.title = 'Insurance-Gujarat';
+              } else if (selectedValue === 'Manufacture-Gujarat') {
+                chartData.datasets[0].data = [1373,1453,819,2456,2887,2679,1136,2373,2501];
+                chartData.title = 'Manufacture-Gujarat';
+              } else if (selectedValue === 'Media & Communications-Gujarat') {
+                chartData.datasets[0].data = [684,1392,868,2125,2160,1929,1764,2361,2561];
+                chartData.title = 'Media & Communications-Gujarat';
+              } else if (selectedValue === 'Mining & Quarrying-Gujarat') {
+                chartData.datasets[0].data = [16, 18, 5, 25,49,26,28,37,41];
+                chartData.title = 'Mining & Quarrying-Gujarat';
+              } else if (selectedValue === 'Pharmaceuticall-Gujarat') {
+                chartData.datasets[0].data = [135,143,76,190,209,183,273,262,284];
+                chartData.title = 'Pharmaceuticall-Gujarat';
+              } else if (selectedValue === 'Real estate & renting-Gujarat') {
+                chartData.datasets[0].data = [130, 129, 57, 187,206,266,280,304,335];
+                chartData.title = 'Real estate & renting-Gujarat';
+              } else if (selectedValue === 'Software-Gujarat') {
+                chartData.datasets[0].data = [427,416,191,382,299,299,343,282,269];
+                chartData.title = 'Software-Gujarat';
+              } else if (selectedValue === 'Trading-Gujarat') {
+                chartData.datasets[0].data = [334, 362, 232, 802,906,844,916,1111,1232];
+                chartData.title = 'Trading-Gujarat';
+              } else if (selectedValue === 'Transport,storage & Communications-Gujarat') {
+                chartData.datasets[0].data = [124, 130, 62, 257,254,242,310,336,370];
+                chartData.title = 'Transport,storage & Communications-Gujarat';
+              }
+        
+              myChart.update();
+            }
+
+            // 2nd graph
+
+          
+
+         
+          
+
+          var chartDropdown3 = document.getElementById('chartDropdown3');
+          var chartData1 = {
+            labels: ['2017','2018','2019','2020','2021','2022','2023','2024'],
+            datasets: [
+              {
+                label: 'Industrial Growth in %',
+                backgroundColor: 'rgb(50,50, 207)',
+                borderColor: 'rgb(50,50, 207)',
+                borderWidth: 1,
+                data: [-2.51,-2.14,-1.61,-1.07,-0.56,-0.30,-0.10,0]
+              }
+            ]
+          };
+      
+          var ctx = document.getElementById('myChart1').getContext('2d');
+          var myChart1 = new Chart(ctx, {
+  type: 'line',
+  data: chartData1,
+  options: {
+    responsive: true,
+    legend: {
+      position: 'top',
+    },
+    title: {
+      display: true,
+      text: 'Chart Title',
+      font: {
+        size: 26, // Adjust the font size for the chart title
+        weight: 'bold', // Make the chart title bold
+      },
+      color: 'black', // You can also change the font color if needed
+    },
+    scales: {
+      x: {
+        display: true,
+        title: {
+          display: true,
+          text: '',
+          font: {
+            size: 15, // Adjust the font size for the X-axis label
+            weight: 'bold', // Make the X-axis label bold
+          },
+          color: 'black', // You can also change the font color if needed
+        },
+        ticks: {
+          font: {
+            size: 12, // Adjust the font size for the X-axis ticks
+            weight: 'normal', // Use 'normal' for regular font weight
+          },
+          color: 'black', // You can also change the tick font color if needed
+        },
+      },
+      y: {
+        display: true,
+        title: {
+          display: true,
+          text: 'Industrial growth in %age',
+          font: {
+            size:15, // Adjust the font size for the Y-axis label
+             // Make the Y-axis label bold
+          },
+          color: 'black', // You can also change the font color if needed
+        },
+        ticks: {
+          beginAtZero: true,
+          font: {
+            size: 12, // Adjust the font size for the Y-axis ticks
+            weight: 'normal', // Use 'normal' for regular font weight
+          },
+          color: 'black', // You can also change the tick font color if needed
+        },
+      },
+    },
+  },
+});
+      
+          chartDropdown3.addEventListener('change', function() {
+            var selectedValue1 = this.value;
+            var chartDropdown4 = document.getElementById('chartDropdown4');
+            chartDropdown4.addEventListener('change', function() {
+              var selectedValue2 = this.value;
+              var selectedValue = selectedValue1 + "-" + selectedValue2;
+              updateChart1(selectedValue);
+            });
+            var selectedValue = selectedValue1 + "-" + chartDropdown4.value;
+            updateChart1(selectedValue);
+          });
+      
+          function updateChart1(selectedValue) {
+            if (selectedValue === 'Mining and quarrying-India') {
+              chartData1.datasets[0].data = [-2.51,-2.14,-1.61,-1.07,-0.56,-0.30,-0.10,0];
+              chartData1.title = 'Mining and quarrying-India';
+            } else if (selectedValue === 'Manufacturing-India') {
+              chartData1.datasets[0].data = [-1.58,-0.81,-0.46,-0.39,-0.30,-0.10,-0.01,0];
+              chartData1.title = 'Manufacturing-India';
+            } else if (selectedValue === 'Information and communication-India') {
+              chartData1.datasets[0].data = [-2.95,-2.05,-1.73,-1.29,-0.46,-0.3,-0.1,0.1];
+              chartData1.title = 'Information and communication-India';
+            }else if (selectedValue === 'Financial and insurance activities-India') {
+              chartData1.datasets[0].data = [-2.11,-1.28,-0.57,0.05,0.39,1,2,3];
+              chartData1.title = 'Financial and insurance activities-India';
+            }else if (selectedValue === 'Professional scientific and technical activities-India') {
+              chartData1.datasets[0].data = [-2.60,-1.88,-1.70,-1.09,-0.44,-0.2,0,1];
+              chartData1.title = 'Professional scientific and technical activities-India';
+            }else if (selectedValue === 'Arts, entertainment and recreation-India') {
+              chartData1.datasets[0].data = [-1.38,-1.03,-0.84,-0.40,-0.08,-0.05,0.02,0];
+              chartData1.title = 'Arts, entertainment and recreation-India';
+            }
+             else if (selectedValue === 'Mining and quarrying-United Kingdom') {
+              chartData1.datasets[0].data = [-3.17,-3.16,-0.04,0.67,0.35,1,2,3];
+              chartData1.title = 'Mining and quarrying-United Kingdom';
+            } else if (selectedValue === 'Manufacturing-United Kingdom') {
+              chartData1.datasets[0].data = [0.65,1.25,1.28,1.14,0.23,0.15,0.06,0];
+              chartData1.title = 'Manufacturing-United Kingdom';
+            } else if (selectedValue === 'Information and communication-United Kingdom') {
+              chartData1.datasets[0].data = [1.19,0.42,0.86,0.64,0.85,0.6,0.5,0.4];
+              chartData1.title = 'Information and communication-United Kingdom';
+            }else if (selectedValue === 'Financial and insurance activities-United Kingdom') {
+              chartData1.datasets[0].data = [1.55,1.15,2.05,2.47,1.44,1.6,1.8,2];
+              chartData1.title = 'Financial and insurance activities-United Kingdom';
+            }else if (selectedValue === 'Professional scientific and technical activities-United Kingdom') {
+              chartData1.datasets[0].data = [-0.02,0.55,0.24,0.36,0.32,0.4,0.3,0.5];
+              chartData1.title = 'Professional scientific and technical activities-United Kingdom';
+            } else if (selectedValue === 'Arts, entertainment and recreation-United Kingdom') {
+              chartData1.datasets[0].data = [0.11,-0.11,0.34,0.40,0.40,0.5,0.3,0.2];
+              chartData1.title = 'Arts, entertainment and recreation-United Kingdom';
+            }
+            else if (selectedValue === 'Mining and quarrying-United States') {
+              chartData1.datasets[0].data = [-1.63,-2.32,0.56,0.64,0.05,0.5,1,0.8];
+              chartData1.title = 'Mining and quarrying-United States';
+            } else if (selectedValue === 'Manufacturing-United States') {
+              chartData1.datasets[0].data = [0.97,0.42,0.41,0.62,0.17,0.3,0.6,0.7];
+              chartData1.title = 'Manufacturing-United States';
+            } else if (selectedValue === 'Information and communication-United States') {
+              chartData1.datasets[0].data = [1.72,1.14,0.76,0.07,0.37,0,-0.5,-1];
+              chartData1.title = 'Information and communication-United States';
+            }else if (selectedValue === 'Financial and insurance activities-United States') {
+              chartData1.datasets[0].data = [2.07,1.77,1.33,1.24,1.32,1.2,1.1,1];
+              chartData1.title = 'Financial and insurance activities-United States';
+            }else if (selectedValue === 'Professional scientific and technical activities-United States') {
+              chartData1.datasets[0].data = [0.97,0.77,0.69,0.44,0.30,0.2,0.1,0];
+              chartData1.title = 'Professional scientific and technical activities-United States';
+            } else if (selectedValue === 'Arts, entertainment and recreation-United States') {
+              chartData1.datasets[0].data = [-0.20,-0.06,-0.03,0.22,0.15,0.2,0.1,0.1];
+              chartData1.title = 'Arts, entertainment and recreation-United States';
+            }
+            else if (selectedValue === 'Mining and quarrying-Japan') {
+              chartData1.datasets[0].data = [1.61,1.31,0.25,-0.98,-0.86,-1,-1.5,-2];
+              chartData1.title = 'Mining and quarrying-Japan';
+            } else if (selectedValue === 'Manufacturing-Japan') {
+              chartData1.datasets[0].data = [3.71,3.64,2.76,2.69,2.08,2,1.5,1];
+              chartData1.title = 'Manufacturing-Japan';
+            } else if (selectedValue === 'Information and communication-Japan') {
+              chartData1.datasets[0].data = [2.32,2.51,1.71,1.23,0.82,0.5,0.4,0];
+              chartData1.title = 'Information and communication-Japan';
+            }else if (selectedValue === 'Financial and insurance activities-Japan') {
+              chartData1.datasets[0].data = [3.79,1.50,1.19,1.45,1.36,1.5,1.2,1];
+              chartData1.title = 'Financial and insurance activities-Japan';
+            }else if (selectedValue === 'Professional scientific and technical activities-Japan') {
+              chartData1.datasets[0].data = [2.08,1.45,1.61,0.94,0.76,0.5,0.4,0.3];
+              chartData1.title = 'Professional scientific and technical activities-Japan';
+            } else if (selectedValue === 'Arts, entertainment and recreation-Japan') {
+              chartData1.datasets[0].data = [4.59,6.05,4.71,3.65,1.93,1.5,1.2,0.5];
+              chartData1.title = 'Arts, entertainment and recreation-Japan';
+            } 
+            else if (selectedValue === 'Mining and quarrying-China') {
+              chartData1.datasets[0].data = [-1.82,-2.13,-1.40,-0.76,-0.18,0,0.2,0.5];
+              chartData1.title = 'Mining and quarrying-China';
+            } else if (selectedValue === 'Manufacturing-China') {
+              chartData1.datasets[0].data = [-1.06,-0.90,-0.65,-0.24,-0.20,-0.1,0.2,0.4];
+              chartData1.title = 'Manufacturing-China';
+            } else if (selectedValue === 'Information and communication-China') {
+              chartData1.datasets[0].data = [-2.14,-0.75,-0.40,-0.80,-0.69,-0.5,-0.3,0];
+              chartData1.title = 'Information and communication-China';
+            }else if (selectedValue === 'Financial and insurance activities-China') {
+              chartData1.datasets[0].data = [3.90,2.89,2.09,0.98,0.37,0,-0.5,-1];
+              chartData1.title = 'Financial and insurance activities-China';
+            }else if (selectedValue === 'Professional scientific and technical activities-China') {
+              chartData1.datasets[0].data = [-1.67,-0.96,-0.85,-0.40,-0.45,0.4,0.35,-0.25];
+              chartData1.title = 'Professional scientific and technical activities-China';
+            } else if (selectedValue === 'Arts, entertainment and recreation-China') {
+              chartData1.datasets[0].data = [0.98,1.13,0.23,0.27,-0.14,0,0.1,0.4];
+              chartData1.title = 'Arts, entertainment and recreation-China';
+            }
+      
+            myChart1.update();
+          }
+            
+          </script>
+    
+
+    <!-- Footer Start -->
+     <!-- Footer Start -->
+     <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s" style="height:100px;">
+      <div class="container">
+          <div class="row gx-5">
+              
+                      <div class="col-lg-4 col-md-12 pt-5 mb-5" style="display:flex;">
+                          
+                              <h3 class="text-light mb-0" style="white-space:nowrap;">Get In Touch <p style="font-size: medium;">nainankita08@gmail.com</p></h3>
+                           
+                          <div class="d-flex mt-4">
+                              <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                              
+                              <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                             
+                          </div>
+                      
+                      </div>
+      
+                      
+  
+                  
+          </div>
+      </div>
+  </div>
+  <div class="container-fluid text-white" style="background: #061429;">
+      <div class="container text-center">
+          <div class="row justify-content-end">
+              <div class="col-lg-8 col-md-6">
+                  <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
+                      <p class="mb-0">&copy; <a class="text-white border-bottom" href="#">SkillsUpNow</a>. All Rights Reserved. 
+          
+          
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Footer End -->
+
+   
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
